@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Poppins", "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  --color-sky-bg: #fdf3e6;
+  --color-sky-bg-2: #f7ecd8;
+  --color-brand: #e8663f;
+  --color-brand-dark: #cc4f2b;
+  --color-sea: #1b8a94;
+  --color-ink: #22302d;
+  --color-muted: #78847e;
+  --color-line: #ece0c9;
+  --color-amber: #f2a93b;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: linear-gradient(180deg, #fdf3e6 0%, #f6efdd 45%, #ffffff 100%);
+  min-height: 100vh;
+}
+
+.font-display { font-family: var(--font-display); }
+::selection { background: var(--color-brand); color: white; }
+.card-shadow { box-shadow: 0 10px 30px -14px rgba(140, 90, 40, 0.25); }
+.scrollbar-none::-webkit-scrollbar { display: none; }
+.scrollbar-none { -ms-overflow-style: none; scrollbar-width: none; }
